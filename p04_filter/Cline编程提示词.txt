@@ -1,0 +1,1 @@
+使用Python、OpenCV编程创建一个项目，获取images文件夹下的图片xiaoren.png，以可视化方式演示各种常用的卷积操作，要求使用Gradio作为前端。
