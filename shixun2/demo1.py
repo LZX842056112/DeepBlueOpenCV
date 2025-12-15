@@ -1,3 +1,5 @@
+import random
+
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
@@ -40,7 +42,6 @@ def get_foreground_mask(img, scale_factor=0.06, iter_count=2):
     mask = np.where((mask == 0) | (mask == 2), 0, 1).astype(np.uint8)
     # 将缩小后的掩码恢复到原始尺寸（使用最近邻插值保持二值性）
     mask = cv2.resize(mask, (w, h), interpolation=cv2.INTER_NEAREST)
-
     return mask, True
 
 
@@ -74,7 +75,7 @@ def find_indentation_defect(img, hsv, mask):
         return None
     # 左角点：x+y最小的点（最左上的点）
     p_left = top_pts[np.argmin(top_pts.sum(axis=1))]
-    # 右角点：y-x最小的点（即 y 较小且 x 较大的点，右上角方向）
+    # 右角点：y+(-x)最小的点（即 y 较小且 x 较大的点，右上角方向）
     p_right = top_pts[np.argmin(top_pts[:, 1] - top_pts[:, 0])]
 
     x1, y1 = p_left
@@ -111,7 +112,7 @@ def find_indentation_defect(img, hsv, mask):
     }
 
 
-# ===================== 褐色斑点 =====================
+# 褐色斑点检测
 def find_brown_candidate(hsv, mask):
     # 定义褐色的HSV范围
     lower = np.array([10, 80, 0])
@@ -143,7 +144,7 @@ def find_brown_candidate(hsv, mask):
 
 # 检测碎片缺陷
 def find_debris_candidate(gray, mask, img_shape):
-    h, w = img_shape
+    h, w = img_shape[:2]
     # 创建亮度掩码，排除过亮区域
     _, bright = cv2.threshold(gray, 200, 255, cv2.THRESH_BINARY_INV)
     # 结合前景掩码和亮度掩码，排除高光区域
@@ -187,7 +188,7 @@ def find_debris_candidate(gray, mask, img_shape):
             }
 
 
-# ===================== 暗斑检测 =====================
+# 暗斑检测
 def find_dark_spot(hsv, mask):
     h, w = mask.shape
     # 计算腐蚀核大小（图像尺寸的4%）
@@ -258,7 +259,7 @@ if __name__ == '__main__':
         for res in (
                 find_indentation_defect(img, hsv, mask),
                 find_brown_candidate(hsv, mask),
-                find_debris_candidate(gray, mask, img.shape[:2]),
+                find_debris_candidate(gray, mask, img.shape),
                 find_dark_spot(hsv, mask),
         ):
             # 将检测到的缺陷添加到列表中
