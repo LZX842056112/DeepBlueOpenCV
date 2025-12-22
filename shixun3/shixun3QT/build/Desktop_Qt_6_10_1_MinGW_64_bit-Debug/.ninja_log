@@ -1,0 +1,18 @@
+# ninja log v6
+23	173	7875869211066171	shixun3QT_autogen/timestamp	47c88b3ee3505f95
+23	173	7875869211066171	shixun3QT_autogen/mocs_compilation.cpp	47c88b3ee3505f95
+23	173	7875869211066171	D:/Projects/DeepBule/shixun3QT/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/shixun3QT_autogen/timestamp	47c88b3ee3505f95
+435	1927	7875807955132899	CMakeFiles/shixun3QT.dir/shixun3QT_autogen/mocs_compilation.cpp.obj	8a3377687006fa55
+23	173	7875869211066171	D:/Projects/DeepBule/shixun3QT/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/shixun3QT_autogen/mocs_compilation.cpp	47c88b3ee3505f95
+439	1882	7875807955182894	CMakeFiles/shixun3QT.dir/Widget.cpp.obj	4ebe0504fbcceecb
+174	2263	7875869212561249	CMakeFiles/shixun3QT.dir/main.cpp.obj	70a292a749e2ed88
+2263	2941	7875869233458856	shixun3QT.exe	c106621563c5dd7
+442	1897	7875807955212897	CMakeFiles/shixun3QT.dir/MyTest.cpp.obj	1476e4c025c2fa0f
+34	659	7875884208720444	shixun3QT_autogen/timestamp	47c88b3ee3505f95
+34	659	7875884208720444	shixun3QT_autogen/mocs_compilation.cpp	47c88b3ee3505f95
+34	659	7875884208720444	D:/Projects/DeepBule/shixun3QT/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/shixun3QT_autogen/timestamp	47c88b3ee3505f95
+34	659	7875884208720444	D:/Projects/DeepBule/shixun3QT/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/shixun3QT_autogen/mocs_compilation.cpp	47c88b3ee3505f95
+659	2284	7875884209499074	CMakeFiles/shixun3QT.dir/shixun3QT_autogen/mocs_compilation.cpp.obj	eb35d21031edb17
+665	2286	7875884209559069	CMakeFiles/shixun3QT.dir/Widget.cpp.obj	8a9c367329b56440
+662	2313	7875884209519069	CMakeFiles/shixun3QT.dir/main.cpp.obj	50264d5d86cba63
+2313	2443	7875884226035978	shixun3QT.exe	876251898905ed4a
