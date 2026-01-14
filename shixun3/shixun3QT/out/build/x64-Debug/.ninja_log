@@ -1,9 +1,0 @@
-# ninja log v6
-9	344	7878714797051400	shixun3QT_autogen/timestamp	e8c018815aa94bf5
-9	344	7878714797051400	shixun3QT_autogen/mocs_compilation.cpp	e8c018815aa94bf5
-9	344	7878714797051400	D:/Projects/DeepBule/DeepBlueOpenCV/shixun3/shixun3QT/out/build/x64-Debug/shixun3QT_autogen/timestamp	e8c018815aa94bf5
-9	344	7878714797051400	D:/Projects/DeepBule/DeepBlueOpenCV/shixun3/shixun3QT/out/build/x64-Debug/shixun3QT_autogen/mocs_compilation.cpp	e8c018815aa94bf5
-347	1722	7878714797661271	CMakeFiles/shixun3QT.dir/shixun3QT_autogen/mocs_compilation.cpp.obj	15014f982f9702c3
-354	1727	7878714797722797	CMakeFiles/shixun3QT.dir/Widget.cpp.obj	8960c656ed5c992d
-351	1839	7878714797692293	CMakeFiles/shixun3QT.dir/main.cpp.obj	197a850444db99db
-1841	2087	7878714812586195	shixun3QT.exe	e61f2ef63d9af697

@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shixun5/OrbbecSDK" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shixun5/pyorbbecsdk" vcs="Git" />
   </component>
 </project>
